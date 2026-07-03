@@ -3,16 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mañana y tardes encantadas</title>
+  <title>Mañana y tardes encantadas | Desayunos sorpresa y meriendas en Cali</title>
+  <meta name="description" content="Desayunos personalizados, meriendas encantadas y rosas eternas en Cali. Pide por WhatsApp y sorprende a alguien especial hoy mismo." />
+  <meta property="og:title" content="Mañana y tardes encantadas" />
+  <meta property="og:description" content="Desayunos personalizados, meriendas encantadas y rosas eternas en Cali. Pide por WhatsApp." />
+  <meta property="og:image" content="media/02e7e53f-ffca-435a-9fcb-fd5f68b1b1a5.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/jpeg" href="media/logo.jpeg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">
+        <img src="media/logo.jpeg" alt="Logo Mañanas y tardes encantadas" class="logo-mark" width="40" height="40" />
+        <span>Mañana y tardes encantadas</span>
+      </a>
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#personalizado">Pedido personalizado</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#vision-mision">Visión y misión</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <a href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="hero-content">
+      <img src="media/logo.jpeg" alt="Logo Mañanas y tardes encantadas" class="logo-mark logo-mark-hero" width="96" height="96" />
       <p class="eyebrow">Mañana y tardes encantadas</p>
       <h1>Desayunos y meriendas con sabor caleño</h1>
       <p class="subtitle">Dos hermanas creando momentos especiales con desayunos personalizados, meriendas para toda ocasión y rosas eternas.</p>
-      <a href="#servicios" class="btn">Ver servicios</a>
+      <div class="hero-ctas">
+        <a href="https://wa.me/573177128401?text=Hola%2C%20deseo%20ver%20el%20cat%C3%A1logo" class="btn btn-whatsapp" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+      </div>
     </div>
   </header>
 
@@ -35,14 +64,159 @@
       </div>
     </section>
 
+    <section id="comida" class="section food-showcase">
+      <p class="section-eyebrow food-eyebrow">Hecho con amor</p>
+      <h2>Nuestra comida</h2>
+      <p>Ingredientes frescos, presentación cuidada y mucho cariño en cada bandeja.</p>
+      <div class="food-grid">
+        <div class="food-photo">
+          <img src="media/02e7e53f-ffca-435a-9fcb-fd5f68b1b1a5.jpg" alt="Desayuno especial" />
+        </div>
+        <div class="food-photo">
+          <img src="media/1c9cee37-df30-4a5e-ba0a-864dbfed94c2.jpg" alt="Desayuno para compartir" />
+        </div>
+        <div class="food-photo">
+          <img src="media/893cab7f-c949-4db2-83d3-9efb1f1c0fbd.jpg" alt="Dulces para merienda" />
+        </div>
+        <div class="food-photo">
+          <img src="media/a356c2a4-8e10-4640-b81a-0bd95fd52c4a.jpg" alt="Cesta de desayuno" />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu">
+      <p class="section-eyebrow">Elige y arma tu pedido</p>
+      <h2>Menú</h2>
+      <p>Selecciona los desayunos que quieras, ajusta la cantidad y te armamos el mensaje listo para WhatsApp.</p>
+
+      <div class="menu-grid">
+        <article class="menu-item" data-menu-item data-name="Desayuno 1">
+          <div class="menu-item-header">
+            <h3>Desayuno 1</h3>
+            <label class="menu-checkbox">
+              <input type="checkbox" class="menu-select" aria-label="Seleccionar Desayuno 1" />
+              <span class="menu-checkbox-mark"></span>
+            </label>
+          </div>
+          <ul class="menu-list">
+            <li>Papas en fosforitos</li>
+            <li>Omelette de jamón y queso</li>
+            <li>Fruta mango - fresa</li>
+            <li>Maní con pasas</li>
+            <li>Rollitos de jamón y queso</li>
+            <li>Café con leche</li>
+            <li>Decoración con globo</li>
+          </ul>
+          <div class="menu-qty" hidden>
+            <button type="button" class="qty-btn" data-qty-decrease aria-label="Disminuir cantidad">−</button>
+            <span class="qty-value">1</span>
+            <button type="button" class="qty-btn" data-qty-increase aria-label="Aumentar cantidad">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" data-menu-item data-name="Desayuno 2">
+          <div class="menu-item-header">
+            <h3>Desayuno 2</h3>
+            <label class="menu-checkbox">
+              <input type="checkbox" class="menu-select" aria-label="Seleccionar Desayuno 2" />
+              <span class="menu-checkbox-mark"></span>
+            </label>
+          </div>
+          <ul class="menu-list">
+            <li>Sándwiche</li>
+            <li>Papas en fosforitos</li>
+            <li>Rollos de jamón y queso</li>
+            <li>Galleta oreo</li>
+            <li>Fruta banano + fresa</li>
+            <li>Café con leche</li>
+            <li>Decoración con un globo y moño</li>
+          </ul>
+          <div class="menu-qty" hidden>
+            <button type="button" class="qty-btn" data-qty-decrease aria-label="Disminuir cantidad">−</button>
+            <span class="qty-value">1</span>
+            <button type="button" class="qty-btn" data-qty-increase aria-label="Aumentar cantidad">+</button>
+          </div>
+        </article>
+
+        <article class="menu-item" data-menu-item data-name="Desayuno 3">
+          <div class="menu-item-header">
+            <h3>Desayuno 3</h3>
+            <label class="menu-checkbox">
+              <input type="checkbox" class="menu-select" aria-label="Seleccionar Desayuno 3" />
+              <span class="menu-checkbox-mark"></span>
+            </label>
+          </div>
+          <ul class="menu-list">
+            <li>Rollitos de pan con queso</li>
+            <li>Huevos revueltos con jamón</li>
+            <li>Papas de paquete</li>
+            <li>Barquillos</li>
+            <li>Fruta mango - banano</li>
+            <li>Café con leche</li>
+            <li>Decoración con globo</li>
+          </ul>
+          <div class="menu-qty" hidden>
+            <button type="button" class="qty-btn" data-qty-decrease aria-label="Disminuir cantidad">−</button>
+            <span class="qty-value">1</span>
+            <button type="button" class="qty-btn" data-qty-increase aria-label="Aumentar cantidad">+</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-summary">
+        <p id="menu-summary-text">Aún no has seleccionado ningún desayuno.</p>
+        <div class="menu-summary-notes">
+          <label for="menu-notes">¿Quieres modificar algo de tu pedido?</label>
+          <textarea id="menu-notes" rows="3" placeholder="Ej: Sin maní, cambia el café por chocolate, entrega a las 8am..."></textarea>
+        </div>
+        <button type="button" class="btn btn-whatsapp" id="menu-whatsapp-btn" disabled>Enviar pedido por WhatsApp</button>
+      </div>
+    </section>
+
+    <section class="section how-it-works">
+      <h2>Cómo pedir</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Escríbenos</h3>
+          <p>Cuéntanos por WhatsApp qué ocasión celebras y qué te gustaría incluir.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Coordinamos</h3>
+          <p>Definimos juntos fecha, hora y lugar de entrega en Cali.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>¡Disfruta!</h3>
+          <p>Recibes tu desayuno, merienda o rosas eternas listos para sorprender.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" class="btn btn-whatsapp" target="_blank" rel="noopener">Empezar mi pedido</a>
+    </section>
+
     <section class="section delivery">
       <h2>Entrega especial</h2>
       <p>En Cali llevamos tu desayuno hasta el aeropuerto Alfonso Bonilla Aragón para que tu viaje comience con sabor y cariño.</p>
     </section>
 
-    <section class="section about">
+    <section id="nosotras" class="section about">
       <h2>Somos dos hermanas apasionadas</h2>
       <p>Nuestro emprendimiento caleño nace del amor por la cocina creativa y la magia de los pequeños detalles. Cada pedido es preparado con dedicación para que tu día sea inolvidable.</p>
+    </section>
+
+    <section id="vision-mision" class="section vision-mision">
+      <h2>Visión y misión</h2>
+      <div class="vm-grid">
+        <div class="vm-card">
+          <h3>Misión</h3>
+          <p>Crear experiencias que sorprenden: desayunos, meriendas y detalles con rosas eternas hechos a mano, con ingredientes frescos y atención cercana, para que cada cliente celebre sus momentos más especiales en Cali.</p>
+        </div>
+        <div class="vm-card">
+          <h3>Visión</h3>
+          <p>Ser el emprendimiento caleño de desayunos sorpresa y detalles encantados más querido de la región, reconocido por la calidez de dos hermanas, la calidad artesanal y la magia que ponemos en cada entrega.</p>
+        </div>
+      </div>
     </section>
 
     <section id="galeria" class="section gallery">
@@ -68,24 +242,120 @@
       </div>
     </section>
 
-    <section class="section contact">
-      <h2>Contáctanos</h2>
-      <p>Escríbenos por WhatsApp o redes sociales para pedir tu desayuno personalizado o merienda encantada.</p>
-      <div class="contact-grid">
-        <div>
-          <strong>WhatsApp:</strong>
-          <p>Próximamente disponible</p>
+    <section id="personalizado" class="section custom-order">
+      <h2>Cotiza tu pedido personalizado</h2>
+      <p>Cuéntanos qué tienes en mente, adjunta una foto de referencia y te ayudamos a armar la cotización perfecta.</p>
+      <form id="custom-order-form" class="order-form">
+        <div class="form-row">
+          <label for="order-name">Tu nombre</label>
+          <input type="text" id="order-name" name="nombre" required placeholder="Ej: Camila Torres" />
         </div>
-        <div>
-          <strong>Ubicación:</strong>
-          <p>Valle del Cauca, Cali</p>
+        <div class="form-row">
+          <label for="order-type">Tipo de producto</label>
+          <select id="order-type" name="tipo">
+            <option value="Desayuno personalizado">Desayuno personalizado</option>
+            <option value="Merienda encantada">Merienda encantada</option>
+            <option value="Rosas eternas">Rosas eternas</option>
+            <option value="Combo / Otro">Combo / Otro</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="order-date">Fecha deseada (opcional)</label>
+          <input type="date" id="order-date" name="fecha" />
+        </div>
+        <div class="form-row form-row-full">
+          <label for="order-desc">Cuéntanos tu idea</label>
+          <textarea id="order-desc" name="descripcion" rows="4" required placeholder="Ej: Desayuno sorpresa para aniversario, con globos y rosas eternas rojas, entrega en el norte de Cali..."></textarea>
+        </div>
+        <div class="form-row form-row-full">
+          <label for="order-photo">Foto de referencia (opcional)</label>
+          <input type="file" id="order-photo" name="foto" accept="image/*" />
+          <div id="order-photo-preview" class="order-photo-preview"></div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-whatsapp" id="order-share-btn">Enviar cotización por WhatsApp</button>
+        </div>
+        <p class="form-hint" id="order-hint">Al enviar se abrirá WhatsApp con todos tus datos listos. Si elegiste una foto, adjúntala en el chat que se abre para completar tu cotización (por seguridad, el navegador no puede adjuntarla automáticamente).</p>
+      </form>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <h2>Contáctanos</h2>
+      <p>Escríbenos por WhatsApp o Instagram para pedir tu desayuno personalizado o merienda encantada. Respondemos rápido.</p>
+      <div class="contact-grid">
+        <div class="contact-card contact-card-whatsapp">
+          <div class="contact-icon">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true">
+              <path d="M16.01 3C9.38 3 4 8.35 4 14.94c0 2.35.64 4.55 1.84 6.5L4 29l7.77-2.02a12.9 12.9 0 0 0 4.24.72h.01c6.63 0 12-5.35 12-11.94C28 8.35 22.64 3 16.01 3zm0 21.8c-1.36 0-2.7-.36-3.87-1.05l-.28-.16-4.61 1.2 1.23-4.49-.18-.29a9.75 9.75 0 0 1-1.5-5.17c0-5.43 4.44-9.85 9.92-9.85 5.47 0 9.92 4.42 9.92 9.85 0 5.44-4.45 9.86-9.92 9.86h-.01zm5.44-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+            </svg>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>Respuesta inmediata para tu pedido</p>
+          <a href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener">317 712 8401</a>
+        </div>
+        <div class="contact-card contact-card-instagram">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+            </svg>
+          </div>
+          <h3>Instagram</h3>
+          <p>Mira nuestras últimas creaciones</p>
+          <a href="https://www.instagram.com/ma_anasytardesencantadas" class="btn btn-outline btn-small" target="_blank" rel="noopener">@ma_anasytardesencantadas</a>
+        </div>
+        <div class="contact-card contact-card-location">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3>Ubicación</h3>
+          <p>Entregas en Cali y alrededores</p>
+          <span class="contact-static">Valle del Cauca, Cali</span>
         </div>
       </div>
+      <a href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" class="btn btn-whatsapp contact-cta" target="_blank" rel="noopener">Escribir ahora por WhatsApp</a>
     </section>
   </main>
 
+  <div id="product-modal" class="modal-overlay" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <img id="modal-image" src="" alt="" class="modal-image" />
+      <h3 id="modal-title"></h3>
+      <label for="modal-desc">¿Qué modificaciones le quieres hacer a este producto?</label>
+      <textarea id="modal-desc" rows="4" placeholder="Ej: Cámbialo a fresas en vez de banano, agrégale un jugo de mango, entrégalo en caja roja..."></textarea>
+      <button type="button" class="btn btn-whatsapp" id="modal-send">Enviar a WhatsApp</button>
+      <p class="modal-hint" id="modal-hint">Si tu navegador lo permite, se comparte la foto junto con tu mensaje. Si no, se abre WhatsApp con el mensaje listo y solo debes adjuntar esta foto manualmente en el chat.</p>
+    </div>
+  </div>
+
+  <a class="whatsapp-float" href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff" aria-hidden="true">
+      <path d="M16.01 3C9.38 3 4 8.35 4 14.94c0 2.35.64 4.55 1.84 6.5L4 29l7.77-2.02a12.9 12.9 0 0 0 4.24.72h.01c6.63 0 12-5.35 12-11.94C28 8.35 22.64 3 16.01 3zm0 21.8c-1.36 0-2.7-.36-3.87-1.05l-.28-.16-4.61 1.2 1.23-4.49-.18-.29a9.75 9.75 0 0 1-1.5-5.17c0-5.43 4.44-9.85 9.92-9.85 5.47 0 9.92 4.42 9.92 9.85 0 5.44-4.45 9.86-9.92 9.86h-.01zm5.44-7.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37s-1.04 1.02-1.04 2.48 1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/>
+    </svg>
+  </a>
+
   <footer class="footer">
-    <p>© 2026 Mañana y tardes encantadas | Desayunos, meriendas y rosas eternas.</p>
+    <p>© 2026 Mañana y tardes encantadas | Desayunos, meriendas y rosas eternas. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/ma_anasytardesencantadas" class="btn btn-outline btn-small" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/573177128401?text=Hola%2C%20quiero%20pedir%20un%20desayuno%20sorpresa" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <p class="footer-credit">
+      Desarrollado por
+      <a href="https://github.com/Juand-0010" class="btn btn-github btn-small" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+        Juand-0010
+      </a>
+    </p>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
